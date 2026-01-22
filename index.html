@@ -14,16 +14,16 @@
     
 </head>
 
-<body class="">
+<body>
 
     <header class="navbar bg-light">
-        <navbar>
+        <nav>
             <a href="#">
-                <img class="nav-logo"src="/static/log7consultgmbh_logo.svg" alt="Formenlogo Log7 Consult GmbH">
+                <img class="nav-logo" src="/static/log7consultgmbh_logo.svg" alt="Formenlogo Log7 Consult GmbH">
             </a>
             <a class="navbar-link btn-primary" href="/eintrag">Eintrag hinzufügen</a>
             <a class="navbar-link" href="/glossar">Glossar</a>
-        </navbar>
+        </nav>
     </header>
 
     <!-- Hero Image -->
@@ -44,10 +44,27 @@
         <div class="container">
             <form class="search col-4">
                 <input type="text" placeholder="Begriffe durchsuchen" name="search">
-                <button class="btn-search" type="submit">Suche</button>
+                <button class="btn btn-search" type="submit">Suche</button>
             </form>
+        </div>
+
+        <div class="container">
+            <p class="col-12">Filtern nach:</p>
+            <div class="filter">
+                <div class="col-4 col-mobile-12">
+                    <button class="btn btn-category btn-it">IT</button>
+                </div>
+
+                <div class="col-4 col-mobile-12">
+                    <button class="btn btn-category btn-logistik">Logistik</button>
+                </div>
+
+                <div class="col-4 col-mobile-12">
+                    <button class="btn btn-category btn-marketing">Marketing</button>
+                </div>
+            </div>
         </div>
     </section>
 
 </body>
-</html
+</html>

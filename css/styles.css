@@ -96,13 +96,29 @@ h1 {
   letter-spacing: 0.3rem;
 }
 
+/* Text */
+p {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.25rem;
+    color: #FEFFFF;
+    margin: 0.5rem 0;
+    text-align: left;
+}
+
 /*Buttons */
-.btn-primary {
-    background-color: #8BBEB1;
-    color: #04342C;
+.btn {
     font-family: "Odibee Sans", sans-serif;
     font-size: 1.75rem;
     padding: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: #8BBEB1;
+    color: #04342C;
     border: none;
     border-radius: 0.5em;
 }
@@ -110,12 +126,27 @@ h1 {
 .btn-search {
     background-color: #8BBEB1;
     color: #04342C;
-    font-family: "Odibee Sans", sans-serif;
-    font-size: 1.75rem;
-    padding: 1rem;
     border: none;
     border-radius: 0 0.5em 0.5em 0;
 }
+
+.btn-category {
+    background-color: #FEFFFF;
+    color: #04342C;
+    border: 6px solid;
+}
+.btn-it {
+  border-color: #70ABC7;
+}
+
+.btn-logistik {
+  border-color: #C270C7;
+}
+
+.btn-marketing {
+  border-color: #C7A170;
+}
+
 
 /*Images */
 .img-container {
@@ -145,9 +176,20 @@ h1 {
     display: flex;
 }
 
-.search input {
+input {
   flex: 1;
   padding: .5rem;
+  font-family: Work Sans, sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+}
+
+/* Filter */
+.filter {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
 }
 
 /* Mobile Styles */
