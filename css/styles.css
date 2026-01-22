@@ -1,0 +1,124 @@
+/* 12-spaltiges Grid System */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+/* Grid System Breiten*/
+.col-4 { grid-column: span 4; }
+.col-6 { grid-column: span 6; }
+.col-12 { grid-column: span 12; }
+
+/*Google Fonts Einbindung */
+.odibee-sans-regular {
+  font-family: "Odibee Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.25em;
+}
+
+.work-sans-400 {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+  margin: 0;
+}
+
+/* Navigation */
+.navbar {
+  overflow: hidden;
+  background-color: #FEFFFF;
+  padding: 0.5rem;
+  margin: 1rem;
+}
+
+.nav-logo {
+  height: 70px;
+  width: auto;
+  padding: 5px 10px;
+}
+
+.navbar-link {
+  float: right;
+  display: block;
+  color: #04342C;
+  text-align: center;
+  padding: 1rem;
+  font-family: "Odibee Sans", sans-serif;
+  font-size: 1.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Hintergrundfarben */
+.bg-dark {
+  background-color: #261B28;
+}
+
+.bg-light {
+  background-color: #FEFFFF;
+  margin-top: 20px;
+}
+
+/* Container */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+/* Headlines */
+h1 {
+  color: #FEFFFF;
+  font-family: "Odibee Sans", sans-serif;
+  font-size: 48px;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+/*Buttons */
+.btn-primary {
+    background-color: #8BBEB1;
+    color: #04342C;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5em;
+}
+
+/*Images */
+.img-container {
+    position: relative;
+}
+
+.img-hero {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.copyright {
+    position: absolute;
+    font-size: 0.75rem;
+    color: #FEFFFF;
+    bottom: 1rem;
+    right: 1rem;
+}
