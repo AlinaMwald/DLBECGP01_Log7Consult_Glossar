@@ -1,0 +1,24 @@
+/* 12-spaltiges Grid System */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1rem;
+}
+
+/* Grid System Breiten*/
+.col-4 { grid-column: span 4; }
+.col-6 { grid-column: span 6; }
+.col-12 { grid-column: span 12; }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .col-4 {
+    grid-column: span 12;
+  }
+}

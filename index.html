@@ -6,6 +6,8 @@
     <title>Glossar der Log7-Consult GmbH</title>
 
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/grid.css">
 
     <!-- Google Fonts einbetten -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,17 +39,15 @@
     <!-- Glossar Übersicht -->
     <section class="bg-dark col-12">
         <div class="container">
-            <h1>Glossar</h1>
-            <!--<p class="header-subtitle">In unserem Log7-Consult-GmbH Glossar finden Sie eine Sammlung von Fachbegriffen und deren Definitionen aus den Bereichen Logistik, Marketing und IT.</p> -->
-        </div>
-
-        <div class="container">
+            <h1 class="col-12">Glossar</h1>
             <form class="search col-4">
                 <input type="text" placeholder="Durchsuchen" name="search">
                 <button class="btn btn-search" type="submit">Suche</button>
             </form>
         </div>
+        </div>
 
+        <!-- Kategorien-Filter -->
         <div class="container full-width">
             <p class="col-12">Nach Kategorien filtern:</p>
             <div class="btn-group">
@@ -57,6 +57,7 @@
             </div>
         </div>
 
+        <!-- Alphabet-Filter -->
         <div class="container alphabet">
             <a class="btn btn-alphabet" href="#A">A</a>
             <a class="btn btn-alphabet" href="#B">B</a>
@@ -86,6 +87,23 @@
             <a class="btn btn-alphabet" href="#Z">Z</a>
         </div>
 
+    </section>
+
+    <section class="bg-dark">
+        <div class="container">
+            <hr class="col-12">
+
+            <div class="col-12">
+                <span class="letter" id="A">A</span>
+            </div>
+
+            <div class="card col-4">
+                <span class="category category-marketing">Marketing</span>
+                <h2>Axxx</h2>
+                <p>Achtung, dies ist nur ein platzhalter ohne verlinkte Seite. Hier steht eine Kurzbeschreibung des Begriffs</p>
+                <a class="btn-moreinfo" href="/glossar/axxx">Weiterlesen →</a>
+            </div>
+        </div>
     </section>
 
 </body>
