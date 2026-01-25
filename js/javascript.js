@@ -10,7 +10,7 @@ function myFunction() {
     card.style.display = title.includes(filter) ? "" : "none";
   });
 
-  // 2️⃣ Buchstaben + HR anzeigen & ausblenden
+  // Buchstaben + HR anzeigen & ausblenden
   letters.forEach(letter => {
     const letterValue = letter.innerText;
     const relatedCards = document.querySelectorAll(`.card[data-letter="${letterValue}"]`);
