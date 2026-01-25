@@ -1,44 +1,28 @@
 /* Suchfunktion Glossar Übericht nach Buchstaben */
-
 function myFunction() {
-  const input = document.getElementById("searchInput");
-  const filter = input.value.toUpperCase();
-
+  const filter = document.getElementById("searchInput").value.toUpperCase();
   const cards = document.querySelectorAll(".card");
   const letters = document.querySelectorAll(".letter");
 
-  // Cards filtern
+  // Card-Reset
   cards.forEach(card => {
-    const text = card.textContent.toUpperCase();
-    if (text.includes(filter)) {
-      card.style.display = "";
-    } else {
-      card.style.display = "none";
-    }
+    const title = card.querySelector("h2").innerText.toUpperCase();
+    card.style.display = title.includes(filter) ? "" : "none";
   });
 
-  // Buchstaben ein- & ausblenden
+  // 2️⃣ Buchstaben + HR anzeigen & ausblenden
   letters.forEach(letter => {
-    const letterValue = letter.textContent;
-    const relatedCards = document.querySelectorAll(
-      `.card[data-letter="${letterValue}"]:not([style*="display: none"])`
-    );
-  // wichtig dass ausgeblendet & richtig gefiltert wird!
-    const letterWrapper = letter.parentElement;
-    const divider = letterWrapper.previousElementSibling;
+    const letterValue = letter.innerText;
+    const relatedCards = document.querySelectorAll(`.card[data-letter="${letterValue}"]`);
+    const hasVisibleCard = Array.from(relatedCards).some(card => card.style.display !== "none");
 
-    if (relatedCards.length === 0) {
-      letterWrapper.style.display = "none";
-      divider.style.display = "none";
-    } else {
-      letterWrapper.style.display = "";
-      divider.style.display = "";
-    }
+    const letterWrapper = letter.parentElement; // div.col-12
+    const hr = letterWrapper.previousElementSibling; // hr
+
+    letterWrapper.style.display = hasVisibleCard ? "" : "none";
+    if (hr) hr.style.display = hasVisibleCard ? "" : "none";
   });
 }
-
-
-
 
 // GLOSSAR-EINTRÄGE AUTOMATISIERT AUS JSON LADEN FÜR GLOSSAR-STARTSEITE TEST
 /*
