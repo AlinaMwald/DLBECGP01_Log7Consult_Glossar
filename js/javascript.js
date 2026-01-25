@@ -1,23 +1,42 @@
 /* Suchfunktion Glossar Übericht nach Buchstaben */
 
 function myFunction() {
-  // Benötigte Variablen deklarieren
-  var input, filter, letters, i, txtValue;
-  input = document.getElementById('searchInput');
-  filter = input.value.toUpperCase();
-  letters = document.querySelectorAll('.letter');
+  const input = document.getElementById("searchInput");
+  const filter = input.value.toUpperCase();
 
-  // Loop through all letter spans, and hide those who don't match the search query
-  for (i = 0; i < letters.length; i++) {
-    txtValue = letters[i].textContent || letters[i].innerText;
-    var colDiv = letters[i].parentElement; // div.col-12
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      colDiv.style.display = "";
+  const cards = document.querySelectorAll(".card");
+  const letters = document.querySelectorAll(".letter");
+
+  // Cards filtern
+  cards.forEach(card => {
+    const text = card.textContent.toUpperCase();
+    if (text.includes(filter)) {
+      card.style.display = "";
     } else {
-      colDiv.style.display = "none";
+      card.style.display = "none";
     }
-  }
+  });
+
+  // Buchstaben ein- & ausblenden
+  letters.forEach(letter => {
+    const letterValue = letter.textContent;
+    const relatedCards = document.querySelectorAll(
+      `.card[data-letter="${letterValue}"]:not([style*="display: none"])`
+    );
+  // wichtig dass ausgeblendet & richtig gefiltert wird!
+    const letterWrapper = letter.parentElement;
+    const divider = letterWrapper.previousElementSibling;
+
+    if (relatedCards.length === 0) {
+      letterWrapper.style.display = "none";
+      divider.style.display = "none";
+    } else {
+      letterWrapper.style.display = "";
+      divider.style.display = "";
+    }
+  });
 }
+
 
 
 

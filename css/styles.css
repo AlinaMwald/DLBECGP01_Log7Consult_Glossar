@@ -154,6 +154,23 @@ input {
     justify-content: space-around;
 }
 
+/* Kategorien */
+.category {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.category-marketing {
+    color: #C7A170;
+}
+.category-logistik {
+    color: #C270C7;
+}
+.category-it {
+    color: #70ABC7;
+}
+
 /* Letters Glossar Übersicht*/
 .letter {
     font-family: "Work Sans", sans-serif;

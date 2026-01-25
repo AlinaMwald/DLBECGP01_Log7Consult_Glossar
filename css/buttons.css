@@ -99,18 +99,23 @@
     font-family: "Work Sans", sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     color: #8BBEB1;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .btn-moreinfo:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #C3C4D9;
 }
 
-.btn-moreinfo:disabled{
+.disabled{
     color: hotpink;
-    text-decoration: underline;
+    text-decoration: none;
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 /* Button Group */
