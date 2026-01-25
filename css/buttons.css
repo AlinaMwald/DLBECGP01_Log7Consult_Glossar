@@ -118,6 +118,22 @@
     cursor: not-allowed;
 }
 
+/* Button Back */
+.btn-back {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #8BBEB1;
+    text-decoration: underline;
+}
+
+.btn-back:hover {
+    text-decoration: none;
+    color: #C3C4D9;
+}
+
+
 /* Button Group */
 .btn-group {
     margin-top: 1rem;
