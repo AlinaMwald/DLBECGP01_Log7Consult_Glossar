@@ -1,4 +1,6 @@
-fetch("json/data.js")
+// GLOSSAR-EINTRÄGE AUTOMATISIERT AUS JSON LADEN FÜR GLOSSAR-STARTSEITE TEST
+/*
+fetch("json/data.json")
   .then(res => res.json())
   .then(entries => {
     entries.forEach(entry => {
@@ -21,4 +23,6 @@ fetch("json/data.js")
         </div>
       `);
     });
-  });
+  })
+  .catch(err => console.error("JSON Fehler:", err));
+*/

@@ -41,7 +41,7 @@
         <div class="container">
             <h1 class="col-12">Glossar</h1>
             <form class="search col-4">
-                <input type="text" placeholder="Durchsuchen" name="search">
+                <input type="text" id="myInput" onkeyup="myFunction()"placeholder="Durchsuchen" name="search">
                 <button class="btn btn-search" type="submit">Suche</button>
             </form>
         </div>
@@ -90,56 +90,214 @@
 
     <section class="bg-dark">
         <div class="container">
+            <!-- A -->
             <hr class="col-12">
-
             <div class="col-12">
                 <span class="letter" id="A">A</span>
             </div>
-
+            
             <div class="card col-4">
                 <span class="category category-marketing">Marketing</span>
                 <h2>Axxx</h2>
-                <p>Achtung, dies ist nur ein platzhalter ohne verlinkte Seite. Hier steht eine Kurzbeschreibung des Begriffs</p>
+                <p>Achtung, dies ist nur ein Platzhalter ohne verlinkte Seite. Hier steht eine Kurzbeschreibung des Begriffs</p>
                 <a class="btn-moreinfo disabled" href="/glossar/axxx">Weiterlesen →</a>
             </div>
+
+            <!-- B -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="B">B</span>
+            </div>
+
+            <!-- C -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="C">C</span>
+            </div>
+
+            <!-- D -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="D">D</span>
+            </div>
+
+            <!-- E -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="E">E</span>
+            </div>
+
+            <!-- F -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="F">F</span>
+            </div>
+
+            <!-- G -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="G">G</span>
+            </div>
+
+            <!-- H -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="H">H</span>
+            </div>
+
+            <!-- I -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="I">I</span>
+            </div>
+
+            <!-- J -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="J">J</span>
+            </div>
+
+            <!-- K -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="K">K</span>
+            </div>
+
+            <!-- L -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="L">L</span>
+            </div>
+
+            <!-- M -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="M">M</span>
+            </div>
+
+            <!-- N -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="N">N</span>
+            </div>
+
+            <!-- O -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="O">O</span>
+            </div>
+
+            <!-- P -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="P">P</span>
+            </div>
+
+            <!-- Q -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="Q">Q</span>
+            </div>
+
+            <!-- R -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="R">R</span>
+            </div>
+
+            <!-- S -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="S">S</span>
+            </div>
+
+            <!-- T -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="T">T</span>
+            </div>
+
+            <!-- U -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="U">U</span>
+            </div>
+
+            <!-- V -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="V">V</span>
+            </div>
+
+            <!-- W -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="W">W</span>
+            </div>
+
+            <!-- X -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="X">X</span>
+            </div>
+
+            <!-- Y -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="Y">Y</span>
+            </div>
+
+            <!-- Z -->
+            <hr class="col-12">
+            <div class="col-12">
+                <span class="letter" id="Z">Z</span>
+            </div>
+
+            <hr class="col-12" style="margin-bottom: 150px;">
         </div>
     </section>
 
+
+    <!-- Glossar Einträge AUTOMATISIERT MIT JSON 
     <section class="bg-dark">
-        <div class="container">
-            <div id="glossar">
-                <!-- A -->
+        <div class="container" id="glossar">
+
                 <hr class="col-12">
                 <div class="col-12">
                     <span class="letter" id="A">A</span>
                 </div>
                 <div class="letter-group col-12" data-letter="A"></div>
 
-                <!-- B -->
+
                 <hr class="col-12">
                 <div class="col-12">
                     <span class="letter" id="B">B</span>
                 </div>
                 <div class="letter-group col-12" data-letter="B"></div>
 
-                <!-- C -->
+
                 <hr class="col-12">
                 <div class="col-12">
                     <span class="letter" id="C">C</span>
                 </div>
                 <div class="letter-group col-12" data-letter="C"></div>
             </div>
-        </div>
     </section>
+    -->
 
-    <footer class="bg-light">
+    <footer class="bg-blue">
         <div class="container">
-            <p>© 2024 Log7-Consult GmbH. Alle Rechte vorbehalten.</p>
+            <p class="text-dark">© 2024 Log7-Consult GmbH. Alle Rechte vorbehalten.</p>
+            <div>
+                <a class="navbar-link" href="/Impressum">Impressum</a>
+                <a class="navbar-link" href="/Datenschutz">Datenschutzerklärung</a>
+            </div>
         </div>
     </footer>
 
-    <!-- JSON Einbindung-->
+    <!-- JSON Einbindung
     <script src="json/data.js"></script>
+    -->
 
     <!-- JavaScript Einbindung-->
     <script src="javascript.js"></script>

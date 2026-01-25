@@ -30,7 +30,8 @@ hr {
   border: 2px solid;
   height: 2px;
   color: #FEFFFF;
-  margin: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Navigation */
@@ -69,6 +70,10 @@ hr {
   margin-top: 20px;
 }
 
+.bg-blue {
+  background-color: #C3C4D9;
+}
+
 /* Container */
 .container {
   position: relative;
@@ -100,14 +105,9 @@ p {
     text-align: left;
 }
 
-/* Button Group */
-.btn-group {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    grid-column: span 12;
+/* Text */
+.text-dark {
+  color: #04342C;
 }
 
 /*Images */
@@ -180,15 +180,9 @@ input {
     text-align: left;
 }
 
-.btn-moreinfo {
-    color: #8BBEB1;
-    text-decoration: none;
-    font-family: "Work Sans", sans-serif;
-    font-size: 1rem;
-}
-
-.btn-moreinfo.disabled {
-    opacity: 0.5;
-    pointer-events: none;
-    cursor: not-allowed;
+/* Footer */
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
