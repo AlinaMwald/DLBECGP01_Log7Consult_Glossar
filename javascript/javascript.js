@@ -1,23 +1,16 @@
 fetch("json/data.js")
   .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById("glossar");
-    let currentLetter = "";
+  .then(entries => {
+    entries.forEach(entry => {
+      const group = document.querySelector(
+        `.letter-group[data-letter="${entry.letter}"]`
+      );
 
-    data.forEach(entry => {
-      if (entry.letter !== currentLetter) {
-        currentLetter = entry.letter;
-        container.insertAdjacentHTML("beforeend", `
-          <hr class="col-12">
-          <div class="col-12">
-            <span class="letter">${currentLetter}</span>
-          </div>
-        `);
-      }
+      if (!group) return;
 
-      container.insertAdjacentHTML("beforeend", `
+      group.insertAdjacentHTML("beforeend", `
         <div class="card col-4">
-          <span class="category ${entry.categoryKey}">
+          <span class="category category-${entry.categoryKey}">
             ${entry.category}
           </span>
           <h2>${entry.title}</h2>
