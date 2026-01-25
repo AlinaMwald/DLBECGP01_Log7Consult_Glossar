@@ -100,3 +100,8 @@
 .btn-moreinfo:hover {
     text-decoration: underline;
 }
+
+.btn-moreinfo:disabled{
+    color: hotpink;
+    text-decoration: underline;
+}

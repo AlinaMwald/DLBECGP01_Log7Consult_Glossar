@@ -179,3 +179,16 @@ input {
     margin: 1rem 0;
     text-align: left;
 }
+
+.btn-moreinfo {
+    color: #8BBEB1;
+    text-decoration: none;
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+}
+
+.btn-moreinfo.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+}
