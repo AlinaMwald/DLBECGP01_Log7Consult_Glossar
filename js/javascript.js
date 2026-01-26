@@ -5,16 +5,20 @@ function myFunction() {
   const letters = document.querySelectorAll(".letter");
 
   // Card-Reset
-  cards.forEach(card => {
+  cards.forEach((card) => {
     const title = card.querySelector("h2").innerText.toUpperCase();
     card.style.display = title.includes(filter) ? "" : "none";
   });
 
   // Buchstaben + HR anzeigen & ausblenden
-  letters.forEach(letter => {
+  letters.forEach((letter) => {
     const letterValue = letter.innerText;
-    const relatedCards = document.querySelectorAll(`.card[data-letter="${letterValue}"]`);
-    const hasVisibleCard = Array.from(relatedCards).some(card => card.style.display !== "none");
+    const relatedCards = document.querySelectorAll(
+      `.card[data-letter="${letterValue}"]`,
+    );
+    const hasVisibleCard = Array.from(relatedCards).some(
+      (card) => card.style.display !== "none",
+    );
 
     const letterWrapper = letter.parentElement; // div.col-12
     const hr = letterWrapper.previousElementSibling; // hr
@@ -23,6 +27,20 @@ function myFunction() {
     if (hr) hr.style.display = hasVisibleCard ? "" : "none";
   });
 }
+
+/* Last Modified - Datum des letzten Updates auf den Glossar-Seiten */
+function showLastModified() {
+  const mod = document.getElementById("lastModified"); 
+  if (!mod) return;
+  const lastModified = new Date(document.lastModified);
+
+  mod.textContent = lastModified.toLocaleString("de-DE", { // Deutsches Zeitformat
+    dateStyle: "medium",
+    timeStyle: "short"
+  });
+}
+
+window.addEventListener("load", showLastModified);
 
 // GLOSSAR-EINTRÄGE AUTOMATISIERT AUS JSON LADEN FÜR GLOSSAR-STARTSEITE TEST
 /*

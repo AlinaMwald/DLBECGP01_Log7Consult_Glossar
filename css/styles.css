@@ -219,6 +219,16 @@ input {
     text-align: left;
 }
 
+/* Letzte Änderung */
+.last-modified {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1.3rem;
+    color: #C3C4D9;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 /* Footer */
 footer .container {
   display: flex;
