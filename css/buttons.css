@@ -99,8 +99,7 @@
     font-family: "Work Sans", sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding-left: 0;
     color: #8BBEB1;
     text-decoration: underline;
 }
@@ -116,6 +115,21 @@
     pointer-events: none;
     opacity: 0.5;
     cursor: not-allowed;
+}
+
+/* Button external links */
+.btn-extlinks {
+    font-family: "Work Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    padding-left: 0;
+    color: #8BBEB1;
+    text-decoration: underline;
+}
+
+.btn-extlinks:hover {
+    text-decoration: none;
+    color: #C3C4D9;
 }
 
 /* Button Back */

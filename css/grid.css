@@ -22,3 +22,9 @@
     grid-column: span 12;
   }
 }
+
+@media (max-width: 768px) {
+  .col-6 {
+    grid-column: span 12;
+  }
+}

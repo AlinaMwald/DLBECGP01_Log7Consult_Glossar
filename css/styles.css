@@ -96,6 +96,16 @@ h1 {
   letter-spacing: 0.3rem;
 }
 
+h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #FEFFFF;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    text-align: left;
+}
+
 /* Text */
 p {
     font-family: "Work Sans", sans-serif;
@@ -103,6 +113,7 @@ p {
     color: #FEFFFF;
     margin: 0.5rem 0;
     text-align: left;
+    line-height: 1.25;
 }
 
 /* Text */
@@ -114,6 +125,10 @@ p {
   color: #8BBEB1;
 }
 
+.text-link {
+  color: #C3C4D9;
+  text-decoration: underline;
+}
 /*Images */
 .img-container {
     position: relative;
