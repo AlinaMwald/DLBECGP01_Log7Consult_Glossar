@@ -4,9 +4,15 @@
     font-size: 1.75rem;
     padding: 1rem;
     cursor: pointer;
+    text-align: center;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
+}
+
+.btn-row {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* Button Primary */
@@ -15,6 +21,8 @@
     color: #04342C;
     border: none;
     border-radius: 0.5em;
+    width: auto;
+    white-space: nowrap;
 }
 
 .btn-primary:hover {
