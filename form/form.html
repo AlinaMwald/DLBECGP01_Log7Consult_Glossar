@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eintrag hinzufügen</title>
+
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/buttons.css">
+    <link rel="stylesheet" href="../css/grid.css">
+
+    <!-- Google Fonts einbetten -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="navbar bg-light">
+        <nav>
+            <a href="../index.html">
+                <img class="nav-logo" src="/static/log7consultgmbh_logo.svg" alt="Formenlogo Log7 Consult GmbH">
+            </a>
+            <a class="navbar-link btn-primary" href="../form/form.html">Eintrag hinzufügen</a>
+            <a class="navbar-link" href="../#glossar">Glossar</a>
+        </nav>
+    </header>
+
+    <div class="bg-dark">
+        <div class="container">
+            <a class="btn-back col-12" href="../index.html" style="margin-top: 2rem;">Zurück zur Startseite</a>
+            <hr class="col-12">
+            <h1 class="col-12 text-green">
+                Eintrag hinzufügen
+            </h1>
+
+            <!--Formular-->
+
+            <form class="col-12">
+
+                <div class="col-6">
+                    <label class="form-label" for="title">Titel:</label>
+                    <input class="form-input" type="text" id="title" name="title">
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label" for="category">Kategorie:</label>
+                    <select class="form-input" id="category" name="category">
+                        <option value="">Bitte auswählen</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="it">IT</option>
+                        <option value="logistik">Logistik</option>
+                    </select>
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label" for="shortDefinition">Kurzdefinition:</label>
+                    <textarea class="form-input" id="shortDefinition" name="shortDefinition" rows="3"></textarea>
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label" for="image">Bild hochladen:</label>
+                    <input class="form-input" type="file" id="image" name="image">
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label" for="description">Beschreibung (Was ist…?):</label>
+                    <textarea class="form-input" id="description" name="description" rows="8"></textarea>
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label" for="usage">Einsatz:</label>
+                    <textarea class="form-input" id="usage" name="usage" rows="8"></textarea>
+                </div>
+
+                <div class="col-12">
+                    <label class="form-label">Verwandte Begriffe:</label>
+
+                    <div>
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="related[]" value="seo"> <!-- Array durch related -->
+                            SEO
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="related[]" value="tracking"> 
+                            Tracking
+                        </label>
+
+                        <label class="checkbox-item">
+                            <input type="checkbox" name="related[]" value="kpi">
+                            KPIs
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <label class="form-label" for="sources">Links zu externen Quellen:</label>
+                    <input class="form-input" type="url" id="sources" name="sources">
+                </div>
+
+                <div class="col-12 info-text">
+                    <p>
+                        Indem du den Begriff durch Speichern einreichst, wird dieser zunächst
+                        intern geprüft. Erst nach Freigabe durch eine autorisierte Person wird
+                        der Eintrag veröffentlicht.
+                    </p>
+                </div>
+
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary" style="margin-bottom: 150px; margin-top: 2rem;">
+                        Speichern
+                    </button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-blue">
+        <div class="container">
+            <p class="text-dark">© 2024 Log7-Consult GmbH. Alle Rechte vorbehalten.</p>
+            <div>
+                <a class="navbar-link" href="../impressum.html">Impressum</a>
+                <a class="navbar-link" href="../datenschutz.html">Datenschutzerklärung</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Einbindung-->
+    <script src="../js/javascript.js"></script>
+</body>
+
+</html>

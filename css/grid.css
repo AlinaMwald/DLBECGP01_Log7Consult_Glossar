@@ -16,6 +16,11 @@
 .col-6 { grid-column: span 6; }
 .col-12 { grid-column: span 12; }
 
+.col-6 {
+  justify-self: start;
+  text-align: left;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .col-4 {
