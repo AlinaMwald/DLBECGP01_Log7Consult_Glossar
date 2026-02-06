@@ -118,7 +118,7 @@
 }
 
 .disabled{
-    color: hotpink;
+    color: #ff69b4;
     text-decoration: none;
     pointer-events: none;
     opacity: 0.5;

@@ -43,12 +43,12 @@
 
             <form class="col-12">
 
-                <div class="col-6">
+                <div class="col-12">
                     <label class="form-label" for="title">Titel:</label>
                     <input class="form-input" type="text" id="title" name="title">
                 </div>
 
-                <div class="col-6">
+                <div class="col-12">
                     <label class="form-label" for="category">Kategorie:</label>
                     <select class="form-input" id="category" name="category">
                         <option value="">Bitte auswählen</option>
@@ -58,48 +58,38 @@
                     </select>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12">
                     <label class="form-label" for="shortDefinition">Kurzdefinition:</label>
                     <textarea class="form-input" id="shortDefinition" name="shortDefinition" rows="3"></textarea>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12">
                     <label class="form-label" for="image">Bild hochladen:</label>
                     <input class="form-input" type="file" id="image" name="image">
                 </div>
 
-                <div class="col-6">
+                <div class="col-12">
                     <label class="form-label" for="description">Beschreibung (Was ist…?):</label>
                     <textarea class="form-input" id="description" name="description" rows="8"></textarea>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12">
                     <label class="form-label" for="usage">Einsatz:</label>
                     <textarea class="form-input" id="usage" name="usage" rows="8"></textarea>
                 </div>
 
                 <div class="col-12">
-                    <label class="form-label">Verwandte Begriffe:</label>
+                    <label class="form-label" for="related">Verwandte Begriffe:</label>
 
-                    <div>
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="related[]" value="seo"> <!-- Array durch related -->
-                            SEO
-                        </label>
-
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="related[]" value="tracking"> 
-                            Tracking
-                        </label>
-
-                        <label class="checkbox-item">
-                            <input type="checkbox" name="related[]" value="kpi">
-                            KPIs
-                        </label>
-                    </div>
+                    <select class="form-input" id="related" name="related[]" multiple size="4"> <!-- related ist Array -->
+                        <option value="seo">SEO</option>
+                        <option value="conversiontracking">ConversionTracking</option>
+                        <option value="kpi">KPIs</option>
+                        <option value="roi">ROI</option>
+                    </select>
                 </div>
 
-                <div class="col-6">
+                <div class="col-12">
                     <label class="form-label" for="sources">Links zu externen Quellen:</label>
                     <input class="form-input" type="url" id="sources" name="sources">
                 </div>
