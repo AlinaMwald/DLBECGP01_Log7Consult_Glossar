@@ -13,14 +13,14 @@
 
 /* Grid System Breiten*/
 .col-4 { grid-column: span 4; }
-.col-6 { grid-column: span 6; }
-.col-12 { grid-column: span 12; }
 
-.col-6 {
+.col-6 { 
+  grid-column: span 6; 
   justify-self: start;
   width: 100%;
   text-align: left;
 }
+.col-12 { grid-column: span 12; }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
