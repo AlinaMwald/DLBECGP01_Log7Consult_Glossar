@@ -20,6 +20,7 @@
   width: 100%;
   text-align: left;
 }
+
 .col-12 { grid-column: span 12; }
 
 /* Mobile Styles */

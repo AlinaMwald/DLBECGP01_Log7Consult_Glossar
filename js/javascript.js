@@ -28,6 +28,18 @@ function myFunction() {
   });
 }
 
+/* EventListener */
+const searchInput = document.getElementById("searchInput");
+const searchButton = document.getElementById("searchButton");
+const searchForm = document.getElementById("searchForm");
+
+searchInput.addEventListener("input", myFunction);
+
+searchForm.addEventListener("submit", function(e) {
+  e.preventDefault(); // verhindert Neuladen der Seite
+  myFunction();
+});
+
 /* Last Modified - Datum des letzten Updates auf den Glossar-Seiten */
 function showLastModified() {
   const mod = document.getElementById("lastModified"); 
