@@ -30,10 +30,16 @@ function myFunction() {
 
 /* EventListener */
 const searchInput = document.getElementById("searchInput");
+
+  if (searchInput) {
+    searchInput.addEventListener("input", myFunction);
+  }
+
 const searchButton = document.getElementById("searchButton");
 const searchForm = document.getElementById("searchForm");
 
 searchInput.addEventListener("input", myFunction);
+
 
 searchForm.addEventListener("submit", function(e) {
   e.preventDefault(); // verhindert Neuladen der Seite
@@ -51,8 +57,7 @@ function showLastModified() {
     timeStyle: "short"
   });
 }
-
-window.addEventListener("load", showLastModified);
+document.addEventListener("DOMContentLoaded", showLastModified);
 
 // GLOSSAR-EINTRÄGE AUTOMATISIERT AUS JSON LADEN FÜR GLOSSAR-STARTSEITE TEST
 /*
