@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function () {
+
 /* Suchfunktion Glossar Übericht nach Buchstaben */
 function myFunction() {
   const filter = document.getElementById("searchInput").value.toUpperCase();
@@ -30,34 +32,35 @@ function myFunction() {
 
 /* EventListener */
 const searchInput = document.getElementById("searchInput");
+  const searchForm = document.getElementById("searchForm");
 
   if (searchInput) {
     searchInput.addEventListener("input", myFunction);
   }
 
-const searchButton = document.getElementById("searchButton");
-const searchForm = document.getElementById("searchForm");
-
-searchInput.addEventListener("input", myFunction);
-
-
-searchForm.addEventListener("submit", function(e) {
-  e.preventDefault(); // verhindert Neuladen der Seite
-  myFunction();
+  if (searchForm) {
+    searchForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      myFunction();
 });
+  }
 
 /* Last Modified - Datum des letzten Updates auf den Glossar-Seiten */
 function showLastModified() {
-  const mod = document.getElementById("lastModified"); 
-  if (!mod) return;
-  const lastModified = new Date(document.lastModified);
+    const mod = document.getElementById("lastModified");
+    if (!mod) return;
 
-  mod.textContent = lastModified.toLocaleString("de-DE", { // Deutsches Zeitformat
-    dateStyle: "medium",
-    timeStyle: "short"
-  });
-}
-document.addEventListener("DOMContentLoaded", showLastModified);
+    const lastModified = new Date(document.lastModified);
+
+    mod.textContent = lastModified.toLocaleString("de-DE", {
+      dateStyle: "medium",
+      timeStyle: "short"
+    });
+  }
+
+  showLastModified();
+});
+
 
 // GLOSSAR-EINTRÄGE AUTOMATISIERT AUS JSON LADEN FÜR GLOSSAR-STARTSEITE TEST
 /*
